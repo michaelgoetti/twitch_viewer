@@ -1,0 +1,208 @@
+.container {
+	margin: auto;
+}
+
+#header-box {
+	width: auto;
+	min-height: 135px;
+	max-width: 900px;
+	margin: 5% 5% 0 5%;
+}
+
+#label-box {
+	min-height: 135px;
+	font-family: 'Montserrat';
+	font-size: 84px;
+	letter-spacing: -6px;
+	text-align: center;
+	background-color: #6441A4;
+	color: white;
+}
+
+#slider-box {
+	min-height: 135px;
+	background-color: #CCC;
+	border-left: 5px solid white;
+}
+
+#online-slider-box {
+	width: 100%;
+	display: inline-block;
+	margin: 28px 0 0 0;
+}
+
+#offline-slider-box {
+	width: 100%;
+	display: inline-block;
+	margin: 5px 0 5px 0;
+}
+
+#result-box {
+	width: auto;
+	max-width: 900px;
+	min-height: 175px;
+	margin: 4px 5% 5% 5%;
+}
+
+.result {
+	width: 100%;
+	border-radius: 3px;
+	margin: 2px 0;
+}	
+
+
+label {
+	vertical-align: middle;
+	font-family: 'Montserrat';
+}
+
+.logo {
+	height: 100px;
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.logo-img {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+.streamer-text {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: calc(100% - 120px);
+	padding: 10px;	
+}
+
+.streamer-name {
+	font-family: 'Montserrat';
+	font-size: 24px;
+}
+
+.streamer-desc, .streamer-status {
+	font-family: 'PT Sans';
+}
+
+.online-stream {
+	background-color: #eee;
+}
+
+.offline-stream {
+	background-color: #ddd;
+}
+
+.online-stream.hide, .offline-stream.hide {
+	display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+	
+	#online-slider-box, #offline-slider-box {
+		width: 150px;
+	}
+
+	#slider-box {
+		min-height: 60px;
+	}
+
+	#online-slider-box {
+		margin: 10px 0 0 0;
+	}
+
+}
+
+@media only screen and (max-width: 568px) {
+	
+	#twitch-txt {
+		font-size: 60px;
+	}
+
+	#label-box {
+		min-height: 60px;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	#twitch-txt {
+		font-size: 48px;
+	}
+
+	#label-box {
+		min-height: 40px;
+	}
+}
+
+/*SLIDERS*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider.online {
+  background-color: #05740D;
+}
+
+input:focus + .slider.online {
+  box-shadow: 0 0 1px #05740D;
+}
+
+input:checked + .slider.offline {
+  background-color: #CE0017;
+}
+
+input:focus + .slider.oofline {
+  box-shadow: 0 0 1px #CE0017;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

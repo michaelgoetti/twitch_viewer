@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>TwitchFeed</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="TwitchFeed">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  </head>
+  <body>
+		<div class="container">
+			<div class="row">
+				<div id="header-box">
+					<div id="label-box" class="col-sm-9">
+						<p id="twitch-txt">TwitchFeed</p>
+					</div>
+					<div id="slider-box" class="col-sm-3">
+						<div id="online-slider-box">
+							<label class="switch">
+  							<input type="checkbox" checked id="checkOn">
+  							<div class="slider round online"></div>
+							</label>
+							<label class="on-off-txt">Online</label>
+						</div>
+						<div id="offline-slider-box">
+							<label class="switch">
+  							<input type="checkbox" checked id="checkOff">
+  							<div class="slider round offline"></div>
+							</label>
+							<label class="on-off-txt">Offline</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="result-box" class="clearfix">
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
